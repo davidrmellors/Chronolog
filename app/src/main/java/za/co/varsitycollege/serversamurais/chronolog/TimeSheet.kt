@@ -577,8 +577,6 @@ class TimeSheet : Fragment(), FirebaseHelper.FirebaseOperationListener,
                     Log.d("Firebase", "Image uploaded: $downloadUrl")
                     taskPhoto = downloadUrl.toString()
                     progressBar.visibility = View.GONE
-                    // Here you might want to call a method to save this downloadUrl to your task
-                    // saveImageUrlToTask(downloadUrl.toString(), taskId)
                 }
             }
             .addOnFailureListener { e ->
